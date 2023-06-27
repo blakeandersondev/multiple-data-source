@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /multiple-data-source
+
+spring:
+  profiles:
+    active: ${spring_profiles_active:dev}
+
+logging:
+  config: classpath:log4j2.xml
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml,classpath*:mapper/mysql/*.xml,classpath*:mapper/oracle/*.xml,classpath*:mapper/sqlserver/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
