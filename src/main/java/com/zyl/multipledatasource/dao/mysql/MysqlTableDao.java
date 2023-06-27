@@ -1,4 +1,4 @@
-package com.zyl.multipledatasource.dao;
+package com.zyl.multipledatasource.dao.mysql;
 
 import org.apache.ibatis.annotations.Mapper;
 

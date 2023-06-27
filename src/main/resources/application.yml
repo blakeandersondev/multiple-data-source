@@ -11,6 +11,6 @@ logging:
   config: classpath:log4j2.xml
 
 mybatis:
-  mapper-locations: classpath*:mapper/*.xml,classpath*:mapper/mysql/*.xml,classpath*:mapper/oracle/*.xml,classpath*:mapper/sqlserver/*.xml
+  mapper-locations: classpath*:mapper/*.xml,classpath*:mapper/mysql/*.xml,classpath*:mapper/postgresql/*.xml
   configuration:
     map-underscore-to-camel-case: true
